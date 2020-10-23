@@ -5,7 +5,7 @@ h1{color: #0D0D0D;font-family: 'Fjalla One', sans-serif;font-size: 40px;text-ali
 h2{color: #0D0D0D;font-family: 'Fjalla One', sans-serif;font-weight: bold;}
 h3{color: #0D0D0D;font-family: 'Fjalla One', sans-serif;margin: 5px;padding-top: 15px;font-weight: bold;}
 h6,h4{color: #0D0D0D;font-family: 'Quicksand', sans-serif; font-weight: bold}
-p{color: #0D0D0D;font-family: 'Quicksand', sans-serif;}
+p,.parrafo-trabajos{color: #0D0D0D;font-family: 'Quicksand', sans-serif;}
 a{color: #A6A6A6;font-family: 'Quicksand', sans-serif;}
 a:hover{color:#F2F2F2;font-family: 'Quicksand', sans-serif;transition: all .3s;}
 .estilo-icono{margin-right:8px;}
@@ -27,10 +27,15 @@ a:hover{color:#F2F2F2;font-family: 'Quicksand', sans-serif;transition: all .3s;}
 .estilo-boton{background-color:#0D0D0D ; border-color: #0D0D0D;}
 .estilo-boton:hover{background-color:#F2F2F2 ; border-color: #0D0D0D;color:#0D0D0D;}
 .fondo-contacto{background-color: #F2F2F2;}
-.grid-uno{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr;grid-column-gap: 20px;grid-row-gap: 20px;}
 .grid-dos{display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: auto;grid-column-gap: 20px;grid-row-gap: 20px;}
-.imagen-trabajos{box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);border-radius:15px;transition: all 300ms;}
-.imagen-trabajos:hover{display: inline-flex;transform: scale(0.9);-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);}
+/* Diesño Nuestros trabajos */
+.grid-uno{display: grid;grid-template-columns: 1fr 1fr 1fr;grid-template-rows: 1fr 1fr 1fr;grid-column-gap: 20px;grid-row-gap: 20px;}
+.imagen-trabajos{box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);transition: all 300ms;}
+.caja-imagen-trabajos{position: relative;transition: all 300ms;}
+.texto-sobre-imagen{display:block;position: absolute;bottom: 0px;z-index: 10;background: rgb(0,0,0,.8);width: 100%;height: 30%;padding: .6em;transition: all 300ms;text-align: center;}
+.parrafo-trabajos{color: #F2F2F2;}
+.caja-imagen-trabajos:hover{position: relative;transform: scale(0.9);-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);}
+/* --------------------- */
 .dropdown-menu{margin:0;}
 /*Diseño Productos*/
 .productos-caja{display: flex;  flex-direction: row;justify-content: center;} 
@@ -75,11 +80,12 @@ section#producto-destacado-seis {grid-area:producto-destacado-seis;background-co
 .parrafo-servicios-titulo{font-size: 1.4rem;}
 .fondo-servicios{background-image: url("../images/servicios_fondo.jpg");border-radius: 1%;}
 /*  -------------   */
+@media only screen and (max-width: 384px){.parrafo-trabajos{font-size: 0.6rem;}}
 @media only screen and (max-width: 576px){.servicios-icono{margin-top:10px;margin-bottom: 20px;}.caja-servicios{display: flex;   flex-direction: column;}.imagen-mapa{width:200px;height:200px;}}
 @media only screen and (max-width: 992px){.imagen-mapa{width:220px;height:250px;}}
-@media only screen and (max-width: 767px){.grid-dos{display: grid;grid-template-columns: 1fr;grid-template-rows:auto;}.h1-destacados-uno{text-align:center;margin-left:0px !important;}.parrafo-mas-vendidos{text-align:center;margin-left:0px !important;}.imagen-destacados-uno{width: 300px;height:200px;display:block !important;margin-left: auto!important;margin-right:auto !important;}	section#producto-destacados{grid-area:producto-destacados;background-color: #f8f9fa;display: flex;flex-direction: column;}.productos-caja{display: flex;  flex-direction: column;}.productos-texto-uno{padding-top: 30px; padding-right: 0px;}.productos-texto-dos{padding-top: 30px;padding-left: 0px;} .imagen-productos{width: 300px;height:300px;display:block;margin-left: auto;margin-right: auto;}.h2-productos{text-align:center;}.parrafo-productos{text-align:center;}.imagen-soporte{display: none;}.imagen-servicios{width: 400px;height: 400px;margin-bottom:30px;}}
-@media only screen and (min-width: 768px) and (max-width: 992px){.servicios-icono{height: 100px;width: 100px;;margin-top: 40px;}.parrafo-servicios{font-size: 0.6rem;}.h1-destacados-uno{font-size: 1.5rem;text-align: left;}.imagen-destacados-uno{width: 300px;height:200px;}.parrafo-mas-vendidos{font-size:0.7rem;}.productos-texto-uno{padding-top: 80px; padding-right:10px;}.productos-texto-dos{padding-top: 80px;padding-left:10px;}.h2-productos{font-size: 1.4rem;}.imagen-productos{width: 300px;height:300px;}.parrafo-productos{font-size: 0.8rem;}.parrafo-soporte{font-size:0.5rem;}}
-@media only screen and (min-width: 992px) and (max-width: 1200px){.parrafo-servicios{font-size: 0.8rem;}.parrafo-mas-vendidos{font-size:0.8rem;}.parrafo-soporte{font-size:0.8rem;}}
+@media only screen and (max-width: 767px){.parrafo-trabajos{padding-top: 20px}.grid-uno{display: grid;grid-template-columns: 1fr;grid-template-rows: auto;grid-column-gap: 20px;grid-row-gap: 20px;}.grid-dos{display: grid;grid-template-columns: 1fr;grid-template-rows:auto;}.h1-destacados-uno{text-align:center;margin-left:0px !important;}.parrafo-mas-vendidos{text-align:center;margin-left:0px !important;}.imagen-destacados-uno{width: 300px;height:200px;display:block !important;margin-left: auto!important;margin-right:auto !important;}	section#producto-destacados{grid-area:producto-destacados;background-color: #f8f9fa;display: flex;flex-direction: column;}.productos-caja{display: flex;  flex-direction: column;}.productos-texto-uno{padding-top: 30px; padding-right: 0px;}.productos-texto-dos{padding-top: 30px;padding-left: 0px;} .imagen-productos{width: 300px;height:300px;display:block;margin-left: auto;margin-right: auto;}.h2-productos{text-align:center;}.parrafo-productos{text-align:center;}.imagen-soporte{display: none;}.imagen-servicios{width: 400px;height: 400px;margin-bottom:30px;}}
+@media only screen and (min-width: 768px) and (max-width: 992px){.parrafo-trabajos{font-size: 0.5rem;}.servicios-icono{height: 100px;width: 100px;;margin-top: 40px;}.parrafo-servicios{font-size: 0.6rem;}.h1-destacados-uno{font-size: 1.5rem;text-align: left;}.imagen-destacados-uno{width: 300px;height:200px;}.parrafo-mas-vendidos{font-size:0.7rem;}.productos-texto-uno{padding-top: 80px; padding-right:10px;}.productos-texto-dos{padding-top: 80px;padding-left:10px;}.h2-productos{font-size: 1.4rem;}.imagen-productos{width: 300px;height:300px;}.parrafo-productos{font-size: 0.8rem;}.parrafo-soporte{font-size:0.5rem;}}
+@media only screen and (min-width: 992px) and (max-width: 1200px){.parrafo-trabajos{font-size: 0.8rem;}.parrafo-servicios{font-size: 0.8rem;}.parrafo-mas-vendidos{font-size:0.8rem;}.parrafo-soporte{font-size:0.8rem;}}
 /* Diseño lightbox */
 .lb-loader,.lightbox{text-align:center;line-height:0;position:absolute;left:0}
 body.lb-disable-scrolling{overflow:hidden}
@@ -121,4 +127,3 @@ body.lb-disable-scrolling{overflow:hidden}
 .tarjeta-atras .tarjeta a:hover {transition: all .5s;color:#A6A6A6!important;}
 .tarjeta-frente .tarjeta .card-body img {width: 120px;height: 120px;border-radius: 50%;}
 /*----------------------------*/
-
