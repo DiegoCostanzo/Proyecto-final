@@ -11,3 +11,5 @@ $(".dropdown").hover(
             $('b', this).toggleClass("caret caret-up");                
         });
 });
+
+AOS.init();

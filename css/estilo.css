@@ -7,7 +7,7 @@ footer {
 
 body {
   background-color: #F2F2F2;
-  margin: 20px; }
+  }
 
 h1 {
   color: #0D0D0D;
@@ -44,6 +44,9 @@ a {
     color: #F2F2F2;
     font-family: "Quicksand", sans-serif;
     transition: all .3s; }
+.h4-footer{
+	color: #F2F2F2;
+}
 
 .estilo-icono {
   margin-right: 8px; }
@@ -65,15 +68,15 @@ a {
 
 .imagen-circulos {
   border-radius: 50%;
-  width: 100%;
-  height: 100%; }
+   }
 
 .imagen-mapa {
   width: 300px;
   height: 300px; }
 
 .icono-servicios {
-  font-size: 55px; }
+  font-size: 55px;
+  color: #BFA473; }
 
 .estilo-footer1 {
   margin-top: -17px;
@@ -161,6 +164,65 @@ a {
 .parrafo-trabajos {
   color: #F2F2F2; }
 
+.estilo-diferenciadores {
+  background-color:#0D0D0D;
+  margin-top: 100px;
+  margin-bottom: 70px;}
+
+
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alineacion-diferenciadores{
+	display: flex;
+	flex-direction: column; 
+   	align-items: center;
+}
+
+.estilo-diferenciadores div img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+.h3-diferenciadores{
+  color:white;}
+
+.iconos-circulos{
+  width: 80px;
+  height: 80px;
+  padding-top: 20px;	
+}
+
+.iconos-circulos-stock{
+  width: 72px;
+  height: 72px;
+  padding-top: 20px;
+}
+
+.h2-principal{
+	text-align: center;
+  font-weight: bold; }
+}
+
+.parrafo-comentarios-clientes{
+	text-align: center;
+}
+
+.imagen_cliente{
+	height: 140px;
+	width: 140px;
+	border-radius: 50%;
+}
+
 /* --------------------- */
 .dropdown-menu {
   margin: 0; }
@@ -186,7 +248,10 @@ a {
 /*Diseño Más vendido*/
 #grid-tres {
   display: grid;
-  grid-template-areas: "producto-destacados producto-destacados" "producto-destacado-uno producto-destacado-dos" "producto-destacado-tres producto-destacado-cuatro" "producto-destacado-cinco producto-destacado-seis";
+  grid-template-areas: "producto-destacados producto-destacados"
+ "producto-destacado-uno producto-destacado-dos"
+ "producto-destacado-tres producto-destacado-cuatro"
+ "producto-destacado-cinco producto-destacado-seis";
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
@@ -292,9 +357,13 @@ section#producto-destacado-seis {
 /*  -------------   */
 @media only screen and (max-width: 384px) {
   .parrafo-trabajos {
-    font-size: 0.6rem; } }
+    font-size: 0.6rem;}
+}
 
 @media only screen and (max-width: 576px) {
+  .h3-diferenciadores{
+  	font-size: 0.8rem !important;
+  	}
   .servicios-icono {
     margin-top: 10px;
     margin-bottom: 20px; }
@@ -303,14 +372,22 @@ section#producto-destacado-seis {
     flex-direction: column; }
   .imagen-mapa {
     width: 200px;
-    height: 200px; } }
+    height: 200px; } 
+  .estilo-formulario{
+    width: 90%; }
+	.h1-index{
+    font-size: 1.8rem;	}}
 
 @media only screen and (max-width: 992px) {
   .imagen-mapa {
     width: 220px;
-    height: 250px; } }
+    height: 250px; } 
+	}
 
 @media only screen and (max-width: 767px) {
+  .h3-diferenciadores{
+	font-size: 1.2rem;
+}
   .parrafo-trabajos {
     padding-top: 20px; }
   .grid-uno {
@@ -580,7 +657,8 @@ body.lb-disable-scrolling {
 /* --------------------------- */
 /* Diseño tarjetas */
 .icono-conocenos {
-  font-size: 35px; }
+  font-size: 35px; 
+  color:#BFA473;}
 
 .tarjeta {
   border: none;
