@@ -71,7 +71,7 @@ a {
    }
 
 .imagen-mapa {
-  width: 300px;
+  width: 700px;
   height: 300px; }
 
 .icono-servicios {
@@ -358,9 +358,13 @@ section#producto-destacado-seis {
 @media only screen and (max-width: 384px) {
   .parrafo-trabajos {
     font-size: 0.6rem;}
+  .imagen-mapa{
+    width: 300px !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  
   .h3-diferenciadores{
   	font-size: 0.8rem !important;
   	}
@@ -385,6 +389,9 @@ section#producto-destacado-seis {
 	}
 
 @media only screen and (max-width: 767px) {
+  .imagen-mapa{
+    width: 450px;
+  }
   .h3-diferenciadores{
 	font-size: 1.2rem;
 }
@@ -444,6 +451,12 @@ section#producto-destacado-seis {
     margin-bottom: 30px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .estilo-lista-footer{
+    font-size: 0.8rem;
+  }
+  .imagen-mapa{
+    width: 450px;
+  }
   .parrafo-trabajos {
     font-size: 0.5rem; }
   .servicios-icono {
@@ -477,6 +490,9 @@ section#producto-destacado-seis {
     font-size: 0.5rem; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .imagen-mapa{
+    width: 600px;
+  }
   .parrafo-trabajos {
     font-size: 0.8rem; }
   .parrafo-servicios {
